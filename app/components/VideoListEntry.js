@@ -1,7 +1,7 @@
 
-const VideoListEntry = ({video, itemClick}) => {
+const VideoListEntry = ({video}) => {
 	return (
-		<div className="video-list-entry" onClick={itemClick}>
+		<div className="video-list-entry">
       <div className="media-left media-middle">
         <img className="media-object" src={video.snippet.thumbnails.default.url} alt="" />
       </div>

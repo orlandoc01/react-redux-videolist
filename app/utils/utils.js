@@ -1,9 +1,10 @@
+const YOUTUBE_API_KEY = '';
 
 let searchYoutube = (options, callback) => {
   return new Promise((resolve, reject) => {
     const defaults = {
         part: 'snippet',
-        key: window.YOUTUBE_API_KEY,
+        key: YOUTUBE_API_KEY,
         type: "video",
         max: 5,
         videoEmbeddable: true

@@ -5,12 +5,12 @@ import Nav from './Nav.js';
 const App = ({videoList, nowPlaying}) => {
   return (
   	<div>
-  		<Nav keyDown={_.debounce(()=>{}, 500)} />
+  		<Nav />
   		<div className="col-md-7">
-    		<VideoPlayer nowPlaying={nowPlaying} />
+    		<VideoPlayerContainer />
   		</div>
   		<div className="col-md-5">
-    		<VideoList videoList={videoList} listClick={true} />
+    		<VideoListContainer />
   		</div>
 		</div>
 	);

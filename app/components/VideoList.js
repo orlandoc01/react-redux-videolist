@@ -1,13 +1,13 @@
 import VideoListEntry from './VideoListEntry';
 
-const VideoList = ({videoList}) => {
+const VideoList = ({videoList, itemClick}) => {
 	return (
 	  <div className="video-list media">
   		{videoList ?
-   		videoList.map(vid => <VideoListEntry video={vid} itemClick={true} key={vid.etag}/>):
+   		videoList.map(vid => <VideoListEntry video={vid} onClick={itemClick.bind(this,vid)} key={vid.etag}/>):
    		"Please enter query in search bar"}
   	</div>
 	);
 };
 
-export default VideoListEntry;
+export default VideoList;
