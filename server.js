@@ -17,14 +17,11 @@ if(!process.env.NODE_ENV === 'production')  {
   bundle();
 
   //Any requests to localhost:3000/build is proxied to webpack-dev-server
-  
   app.all('/build/*', (req, res) => {
     proxy.web(req, res, {target: 'http://localhost:8080'});
   });
 }
 
-proxy.on('error', (e) => console.log('Connection to Proxy failed'));
+proxy.on('error', e => console.log('Connection to Proxy failed'));
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+app.listen(port, () => console.log(`Server running on port ${port}`));
