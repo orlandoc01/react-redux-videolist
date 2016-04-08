@@ -31,7 +31,10 @@ let config = {
       {
         test: /\.js$/,
         loader: 'babel',
-        exclude: [nodeModulesPath]
+        exclude: [nodeModulesPath],
+        query: {
+          'presets': ['react', 'es2015']
+        }
       },
 
       {

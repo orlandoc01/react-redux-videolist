@@ -14,7 +14,10 @@
     "http-proxy": "^1.13.2",
     "morgan": "^1.7.0",
     "path": "^0.12.7",
-    "react": "^15.0.1"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.1",
+    "redux": "^3.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
