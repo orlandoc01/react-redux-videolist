@@ -1,1 +1,1 @@
-# webpack-setup
+# react-redux-videolist
