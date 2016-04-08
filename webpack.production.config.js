@@ -1,3 +1,4 @@
+'use strict';
 let Webpack = require('webpack');
 let path = require('path');
 let nodeModulesPath = path.resolve(__dirname, 'node_modules');
