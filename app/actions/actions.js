@@ -7,7 +7,7 @@ export const setPlayingVideo = (video) => {
 
 export const setVideoList = (videoList) => {
 	return {
-		actionType: 'SET_LIST'
+		actionType: 'SET_LIST',
 		videoList
 	};
 };

@@ -1,5 +1,6 @@
-import VideoPlayer from './VideoPlayer.js';
-import VideoList from './VideoList.js';
+import React from 'react';
+import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
+import VideoListContainer from '../containers/VideoListContainer.js';
 import Nav from './Nav.js';
 
 const App = ({videoList, nowPlaying}) => {

@@ -1,3 +1,4 @@
+import React from 'react';
 import VideoListEntry from './VideoListEntry';
 
 const VideoList = ({videoList, itemClick}) => {
