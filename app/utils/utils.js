@@ -1,4 +1,5 @@
-const YOUTUBE_API_KEY = '';
+const YOUTUBE_API_KEY = 'AIzaSyDvEaPTlv9zYqaGE9u-Tw5dq_YyDRKG3Uwloc';
+
 
 let searchYoutube = (options, callback) => {
   return new Promise((resolve, reject) => {
@@ -9,7 +10,6 @@ let searchYoutube = (options, callback) => {
         max: 5,
         videoEmbeddable: true
       };
-
     $.ajax({
       url: "https://www.googleapis.com/youtube/v3/search",
       cache: false,

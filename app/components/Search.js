@@ -1,13 +1,16 @@
 import React from 'react';
 import searchYoutube from '../utils/utils.js'
 import {connect} from 'react-redux';
-import {setVideoList} from '../actions/actions.js'
+import {setVideoList, setPlayingVideo} from '../actions/actions.js'
 
 let Search = ({dispatch}) => {
 
 	let searchText = (e) => {
 		searchYoutube({q: e.target.value})
-		.then(list => dispatch(setVideoList(list)))
+		.then(q => {
+			dispatch(setVideoList(q.items);
+			dispatch(setPlayingVideo(q.items[0]));
+		})
 		.catch(e => console.log(e));
 	};
 
