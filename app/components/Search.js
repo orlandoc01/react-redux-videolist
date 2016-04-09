@@ -8,7 +8,7 @@ let Search = ({dispatch}) => {
 	let searchText = (e) => {
 		searchYoutube({q: e.target.value})
 		.then(q => {
-			dispatch(setVideoList(q.items);
+			dispatch(setVideoList(q.items));
 			dispatch(setPlayingVideo(q.items[0]));
 		})
 		.catch(e => console.log(e));
