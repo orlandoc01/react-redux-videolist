@@ -1,7 +1,6 @@
 import React from 'react';
 
 const VideoPlayer = ({nowPlaying}) => {
-  console.log('nowPlaying is', nowPlaying);
 	return (
     <div className="video-player">
       <div className="embed-responsive embed-responsive-16by9">

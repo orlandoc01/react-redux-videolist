@@ -6,18 +6,10 @@ let buildPath = path.resolve(__dirname, 'public', 'build');
 let mainPath = path.resolve(__dirname, 'app', 'main.js');
 
 let config = {
-
-  //Use console map to map errors to line and file
   
   devtool: 'eval',
 
-  entry: [
-    //hot style updates
-    'webpack/hot/dev-server',
-    //script refreshes browser only on hot updates
-    'webpack-dev-server/client?http://localhost:8080',
-    mainPath
-  ],
+  entry: [mainPath],
 
   output: {
     path: buildPath,
@@ -42,9 +34,8 @@ let config = {
         loader: 'style!css'
       }
     ]
-  },
+  }
 
-  plugins: [new Webpack.HotModuleReplacementPlugin()]
 };
 
 module.exports = config;
